@@ -1,0 +1,103 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>Main</ion-title>
+  </ion-navbar>
+</ion-header>
+-->
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row>
+      <ion-col width-100>
+        <ion-slides pager>
+          <ion-slide>
+            <img src="http://ionicframework.com/dist/preview-app/www/assets/img/nin-live.png">
+          </ion-slide>
+
+          <ion-slide>
+            <img src="http://ionicframework.com/dist/preview-app/www/assets/img/badu-live.png">
+          </ion-slide>
+
+          <ion-slide>
+            <img src="http://ionicframework.com/dist/preview-app/www/assets/img/queen-live.png">
+          </ion-slide>
+
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h2>
+          방콕 2박 3일
+        </h2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-content>
+            <ion-card-title>
+              description
+            </ion-card-title>
+              <h3>
+                description
+              </h3>
+            <p>
+              The most popular industrial group ever, and largely
+              responsible for bringing the music to a mass audience.
+            </p>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h2>
+          일정
+        </h2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+
+        <ion-card *ngFor="let item of items">
+          <ion-card-content>
+            <ion-card-title>
+              {{ item.day }}
+            </ion-card-title>
+            <ion-list *ngFor="let content of item.contents">
+              <ion-item>
+                <h2 item-left>
+                  {{ content.time }}
+                </h2>
+                <h2>{{ content.subject }}</h2>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar color="grey">
+    <p>총 합계액: 2,000,000원</p>
+    <ion-buttons end>
+      <button (click)="clickItem()">
+        실시간 조회
+        <ion-icon name="send"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+<!-- <ion-footer style="bacgkround-color: black; color: white;">
+  <ion-buttons end>
+    <p>총 합계액: 2,000,000원</p>
+    <button>
+      실시간 조회
+      <ion-icon name="send"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-footer> -->

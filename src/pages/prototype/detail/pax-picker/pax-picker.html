@@ -1,0 +1,67 @@
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>Main</ion-title>
+  </ion-navbar>
+</ion-header>
+-->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Pax선택</ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
+        <ion-icon name="md-close"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+
+    <ion-card-content>
+      <ion-grid center>
+        <ion-row>
+          <ion-col width-33>
+            <h2>성인</h2>
+          </ion-col>
+          <ion-col width-33>
+            <h2>아동</h2>
+          </ion-col>
+          <ion-col width-33>
+            <h2>유아</h2>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col width-33>
+            <h2>2</h2>
+          </ion-col>
+          <ion-col width-33>
+            <h2>0</h2>
+          </ion-col>
+          <ion-col width-33>
+            <h2>0</h2>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+
+  </ion-card>
+
+  <ion-card>
+    <ion-grid center>
+      <ion-row>
+        <ion-col width-100>
+          <h2>출발일</h2>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col width-100>
+          <h2>YYYY-MM-DD</h2>
+          <!-- <ion-datetime displayFormat="YYYY-MM-DD" pickerFormat="YYYY MM DD" [(ngModel)]="date"></ion-datetime> -->
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+  <button ion-button full (click)="next()">검색</button>
+</ion-content>
